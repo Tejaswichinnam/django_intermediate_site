@@ -1,0 +1,83 @@
+
+
+{% extends "login.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container mt-5" style="max-width: 600px;">
+  <form method="POST">
+    {% csrf_token %}
+    <div class="card shadow">
+      <div class="card-header bg-primary text-white text-center">
+        <h4 class="mb-0">Sign Up</h4>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" class="form-control" name="username" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label>Create password</label>
+          <input type="password" class="form-control" name="password" placeholder="Enter password" required>
+        </div>
+        <div class="form-group text-center">
+          <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+        </div>
+        <small class="text-muted text-center d-block">By signing up, you agree to the terms and conditions.</small>
+      </div>
+    </div>
+  </form>
+</div>
+
+{% endblock content %}
+<!--
+
+  <div class="container" align="center">
+    <form action="" method="POST">{% csrf_token %}
+      <div class="row-justify-content-left">
+        <div class="col-md-6">
+            <div class="card">
+                <header class="card-header">
+                    <h4 class="card-title mt-2">SignUp</h4>
+                </header>
+                <article class="card-body">
+                    <div class="form-row">
+                        <label>username</label>
+                        <input type="text" class="form-control" placeholder="Enter your Name" name="username">
+
+                    </div>   <br>
+                    <div class="form-group">
+                        <label>Emailaddress</label>
+                        <input type="email" class="form-control" placeholder="Enter your Email" name="email">
+
+                    </div>    <br>
+                    <div class="form-group">
+                        <label>create password</label>
+                        <input class="form-control" type="password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">SignUp</button>
+                    </div>
+                    <small class="text-muted">Terms and conditions apply</small>
+
+                </article>
+            </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html> -->

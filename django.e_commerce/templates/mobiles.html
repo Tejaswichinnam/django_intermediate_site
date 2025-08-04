@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<h1 class="text-center text-success ">mobiles</h1>  
+    
+    {% for i in mb_list %}
+        <div class="container" align="center">
+           <div class="gallery">
+                <a target="_blank" href="{{i.2}}">mobile name:<b class="text-primary">{{i.0}}</b>
+                    <img src="{{i.3}}"  alt="Cinque Terre" >
+                </a>  <br>
+                <i> Price:<b>{{i.1}}</b> </i>
+               
+                
+            </div>
+        </div>
+        {% endfor %}
+    
+
+{% endblock content %}
