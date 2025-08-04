@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+{% for p in products %}
+    <div>
+        <h2>{{ p.title }}</h2>
+        <p>{{ p.price }}</p>
+        <a href="{{ p.link }}" target="_blank">View on Flipkart</a>
+    </div>
+{% endfor %}
+
+{% endblock content %}
